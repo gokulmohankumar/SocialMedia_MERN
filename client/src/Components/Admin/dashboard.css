@@ -1,0 +1,100 @@
+
+  
+  /* Define animation keyframes */
+  @keyframes fade-in-slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animation to elements */
+  .animate-fade-in-slide-up {
+    animation: fade-in-slide-up 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+  }
+  
+  /* Styling for the dashboard container */
+ /* dashboard.css */
+
+.container {
+    background: linear-gradient(135deg, #85cff5 0%, #ffffff 100%);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .animate-fade-in-slide-up {
+    animation: fade-in-slide-up 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+  }
+  
+  .card-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative; /* Ensure positioning context for absolute positioning */
+    overflow: hidden; /* Hide overflowing link */
+  }
+  
+  .card-container h3 {
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  
+  .card-container p {
+    margin-bottom: 16px;
+    color: #666666;
+  }
+  
+  .card-container a {
+    color: #ff0000; /* Default link color */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none; /* Prevents link from being clickable until hovered */
+  }
+  
+  .card-container:hover a {
+    opacity: 1;
+    pointer-events: auto; 
+    text-decoration:underline;
+    background-color: #e6e6e6a8;
+    padding:10px;
+    border-radius: 5px;
+    /* Allow link to be clickable on hover */
+  }
+  .image
+  {
+    height:350px;
+  }
+  .arrow-link {
+    display: inline-block;
+    background-color: #00ff62; 
+    padding: 10px 15px; /* Adjust padding for spacing */
+    border-radius: 5px; /* Rounded corners for the link */
+    text-decoration: none; 
+    font-weight: 800;
+    margin: 20px;
+  }
+  
+  .arrow-text {
+    font-weight: bold;
+    color: white; /* Text color */
+  }
+  
+  .arrow-text::before {
+    content: "\2190"; /* Unicode character for left arrow */
+    margin-right: 5px; /* Space between arrow and text */
+  }
+  .arrow-link :hover{
+    color:black; /* Orange background color (adjust as needed) */
+
+  }

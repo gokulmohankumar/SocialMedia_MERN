@@ -1,0 +1,16 @@
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  .typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(20, end);
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+  
